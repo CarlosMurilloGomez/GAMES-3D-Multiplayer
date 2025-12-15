@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\UnityGithub\\GAMES-3D-Multiplayer\\",
+  "WorkspaceRootPath": "C:\\Users\\srgmu\\Desktop\\CARLOS\\UnityGitHub\\GAMES-3D-Multiplayer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FF2EDF5D-55D5-7224-8C4E-4932D0C9095C}|Assembly-CSharp.csproj|c:\\unitygithub\\games-3d-multiplayer\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FF2EDF5D-55D5-7224-8C4E-4932D0C9095C}|Assembly-CSharp.csproj|c:\\users\\srgmu\\desktop\\carlos\\unitygithub\\games-3d-multiplayer\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF2EDF5D-55D5-7224-8C4E-4932D0C9095C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Player.cs",
-              "DocumentMoniker": "C:\\UnityGithub\\GAMES-3D-Multiplayer\\Assets\\Scripts\\Player.cs",
+              "DocumentMoniker": "C:\\Users\\srgmu\\Desktop\\CARLOS\\UnityGitHub\\GAMES-3D-Multiplayer\\Assets\\Scripts\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
-              "ToolTip": "C:\\UnityGithub\\GAMES-3D-Multiplayer\\Assets\\Scripts\\Player.cs",
+              "ToolTip": "C:\\Users\\srgmu\\Desktop\\CARLOS\\UnityGitHub\\GAMES-3D-Multiplayer\\Assets\\Scripts\\Player.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAUwB0AAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAQwEgAAAC0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-09T19:48:11.897Z",
               "EditorCaption": ""

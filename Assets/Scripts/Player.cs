@@ -8,21 +8,17 @@ public class Player : MonoBehaviour
     int indexChildren;
     Vector3 destination;
     public Vector3 min, max;
-    void Start()
-    {
-        //destination = routeFather.GetChild(indexChildren).position; //PUNTOS DE RUTA NORMAL Y ALEATORIA
-        destination = RandomDestination(); // PUNTOS DE RUTA ALEATORIA DELIMITADA
-        GetComponent<NavMeshAgent>().SetDestination(destination);
-    }
 
     public Vector3 RandomDestination()
     {
         return new Vector3(Random.Range(min.x, max.x), Random.Range(min.z, max.z));
     }
 
+//----------------------------------------------------------------------------------------------------------------------------------
+
+    /* // VA A DONDE HAGAS CLICK
     void Update()
     {
-        /* Va a donde hagas click
         if (Input.GetButtonDown("Fire1"))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -32,9 +28,20 @@ public class Player : MonoBehaviour
                 GetComponent<NavMeshAgent>().SetDestination(hit.point);
             }
         }
-        */
+    }
+    */
 
-        /* RUTA POR PUNTOS DE RUTA
+//-------------------------------------------------------------------------------------------------------------------------------
+
+    /* // RUTA POR PUNTOS DE RUTA
+    void Start()
+    {
+        destination = routeFather.GetChild(indexChildren).position;
+        GetComponent<NavMeshAgent>().SetDestination(destination);
+
+    }
+
+    void Update(){
         if (Vector3.Distance(transform.position, destination) < 1.5f)
         {
             indexChildren++;
@@ -45,26 +52,58 @@ public class Player : MonoBehaviour
             destination = routeFather.GetChild(indexChildren).position;
             GetComponent<NavMeshAgent>().SetDestination(destination);
         }
-        */
+    
+    }
+    */
 
-        /* RUTA ALEATORIA POR PUNTOS DE RUTA 
+//---------------------------------------------------------------------------------------------------------------------------------
+
+    /* // RUTA ALEATORIA POR PUNTOS DE RUTA
+    void Start()
+    {
+        destination = routeFather.GetChild(indexChildren).position;
+        GetComponent<NavMeshAgent>().SetDestination(destination);
+    }
+    void Update()
+    {
         if (Vector3.Distance(transform.position, destination) < 1.5f)
         {
             indexChildren = Random.Range(0, routeFather.childCount);
             destination = routeFather.GetChild(indexChildren).position;
             GetComponent<NavMeshAgent>().SetDestination(destination);
         }
-        */
+    }
+    */
 
-        /* RUTA ALEATORIA DELIMITADA 
+//------------------------------------------------------------------------------------------------------------------------------------
+
+    /* // RUTA ALEATORIA DELIMITADA
+    void Start()
+    {
+        destination = RandomDestination();
+        GetComponent<NavMeshAgent>().SetDestination(destination);
+    }
+    
+    void Update()
+    {
         if (Vector3.Distance(transform.position, destination) < 1.5f)
         {
             destination = RandomDestination();
             GetComponent<NavMeshAgent>().SetDestination(destination);
         }
-        */
+    */
 
-        /* IR A UN PUNTO ALEATORIO DEL NAV MESH */
+//---------------------------------------------------------------------------------------------------------------------------------
+
+    /* // IR A UN PUNTO ALEATORIO DEL NAV MESH 
+    void Start()
+    {
+        destination = RandomDestination();
+        GetComponent<NavMeshAgent>().SetDestination(destination);
+    }
+
+    void Update()
+    {
 
         if (Vector3.Distance(transform.position, destination) < 1.5f)
         {
@@ -75,5 +114,9 @@ public class Player : MonoBehaviour
             destination = hit.position;
             GetComponent<NavMeshAgent>().SetDestination(destination);
         }
+    
     }
+    */
+
+//-----------------------------------------------------------------------------------------------------------------------------------
 }
